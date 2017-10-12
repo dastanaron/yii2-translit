@@ -10,7 +10,7 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require dastanaron/yii2-translit "*"
+php composer.phar require dastanaron/yii2-translit
 ```
 
 or add
@@ -28,6 +28,8 @@ Usage
 Для использования можно задать методу translit направление транслитерации:
 ru-en либо en-ru, это не обязательный параметр, можно не указывать,
 в таком случае он сам определит направление в зависимости от языка и переведет его в другой.
+
+Функция так же по умолчанию заменяет пробелы на "_", если это не нужно, вторым параметром, необходимо передать false
 
 ```php
 use dastanaron\translit\Translit;

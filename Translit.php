@@ -20,7 +20,7 @@ class Translit
             'Э', 'Ю', 'Я', 'а', 'б', 'в', 'г', 'д', 'е', 'ё',
             'ж', 'з', 'и', 'й', 'к', 'л', 'м', 'н', 'о', 'п',
             'р', 'с', 'т', 'у', 'ф', 'х', 'ц', 'ч', 'ш', 'щ',
-            'ъ', 'ы', 'ь', 'э', 'ю', 'я', ' '
+            'ъ', 'ы', 'ь', 'э', 'ю', 'я'
         ];
         $this->lat = [
             'A', 'B', 'V', 'G', 'D', 'E', 'E', 'Gh', 'Z', 'I',
@@ -29,11 +29,11 @@ class Translit
             'Y', 'E', 'Yu', 'Ya', 'a', 'b', 'v', 'g', 'd', 'e',
             'e', 'gh', 'z', 'i', 'y', 'k', 'l', 'm', 'n', 'o',
             'p', 'r', 's', 't', 'u', 'f', 'h', 'c', 'ch', 'sh',
-            'sch', 'y', 'y', 'y', 'e', 'yu', 'ya', '_'
+            'sch', 'y', 'y', 'y', 'e', 'yu', 'ya'
         ];
     }
     
-    public function translit($str, $route='')
+    public function translit($str, $nonspace=true, $route='')
     {
        $string = '';
        if(empty($route)) {
@@ -51,7 +51,11 @@ class Translit
        }
        else {
            throw new Exception('Неизвестное направление транслитерации');
-       }       
+       }
+
+       if ($nonspace === true) {
+           $string = str_replace(' ', '_', $string);
+       }
        
        return $string;
        
