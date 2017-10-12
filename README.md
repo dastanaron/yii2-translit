@@ -38,6 +38,6 @@ $str = 'Привет МИР';
 
 $translit = new Translit();
 
-echo $translit->translit($str, 'ru-en');
+echo $translit->translit($str, true, 'ru-en');
 
 ```
