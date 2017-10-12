@@ -1,0 +1,26 @@
+{
+    "name": "dastanaron/yii2-translit",
+    "description": "Transliteration symbols rus-en and en-rus",
+    "type": "extension",
+    "keywords": ["extension"],
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "dastanaron",
+            "email": "flow199@yandex.ru"
+        }
+    ],
+    "require": {
+
+    },
+    "autoload": {
+        "psr-4": {
+            "dastanaron\\translit\\": ""
+        }
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
+    }
+}
