@@ -2,6 +2,9 @@ Transliterator
 ==============
 Transliteration symbols rus-en and en-rus
 
+[![Latest Stable Version](https://poser.pugx.org/dastanaron/yii2-translit/version)](https://packagist.org/packages/dastanaron/yii2-migrate-updater)
+[![Total Downloads](https://poser.pugx.org/dastanaron/yii2-translit/downloads)](https://packagist.org/packages/dastanaron/yii2-migrate-updater)
+
 Installation
 ------------
 
